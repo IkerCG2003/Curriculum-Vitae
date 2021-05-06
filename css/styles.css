@@ -23,6 +23,46 @@ body {
     padding: 10px;
 }
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* columnas */
+
+.column-1 {
+    width: 100%;
+    text-align: left;
+    padding: 4% 7% 0% 7%;
+    font-size: 1vw;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+    padding: 2% 7%;
+}
+
+.column-4 {
+    width: 25%;
+    padding: 4% 7%;
+    float: left;
+}
+
+
+/* imagenes */
+
+.img {
+    border-radius: 10px;
+    height: 50vh;
+    width: 20vw;
+}
+
+
+/* encabezado */
+
 #header {
     height: 100%;
     width: 100%;
@@ -31,6 +71,7 @@ body {
     font-weight: bold;
     font-size: 2vw;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 
@@ -38,7 +79,7 @@ body {
 
 .iconos {
     padding-top: 4px;
-    padding-bottom: 8px;
+    padding-bottom: 15px;
 }
 
 #youtube {
@@ -63,44 +104,125 @@ body {
 
 /* navegación */
 
-.sticky {
-    position: fixed;
+html {
+    scroll-behavior: smooth;
 }
 
-ul {
+#nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: grey;
     position: -webkit-sticky;
     position: sticky;
-    font-size: 1vw;
-    width: 100%;
-    top: 0%;
+    top: 0;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
-li {
+#nav li {
     float: right;
 }
 
-li a {
+#nav li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#nav li a:hover {
+    color: black;
 }
 
 
-/* a:hover {
-    background-color: #111;
-} */
+/* letras */
 
-li.active {
-    background-color: #4caf50;
+.tit {
+    font-size: 2.5vw;
+    color: darkcyan;
 }
 
-html {
-    scroll-behavior: smooth;
+.txt {
+    font-size: 1.75vw;
+    text-align: left;
+}
+
+#section-1 h1 {
+    text-align: center;
+}
+
+#section-2 p {
+    font-size: 1.5vw;
+}
+
+#section-3 p {
+    font-size: 1.5vw;
+}
+
+#video {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+
+/* idiomas */
+
+progress {
+    width: 100%
+}
+
+.barra {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+#fra {
+    padding-bottom: 15px;
+}
+
+
+/* secciones */
+
+#section-1 {
+    text-align: left;
+    font-size: 2vw;
+    padding-bottom: 30px;
+}
+
+#section-2 {
+    width: 100%;
+    float: left;
+    background-color: lightgrey;
+}
+
+#section-3 {
+    width: 100%;
+    float: left;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center;
+}
+
+#section-4 {
+    width: 100%;
+    float: left;
+    background-color: lightgrey;
+}
+
+#section-5 {
+    width: 100%;
+    float: left;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#section-6 {
+    width: 100%;
+    float: left;
+    background-color: lightgrey;
 }

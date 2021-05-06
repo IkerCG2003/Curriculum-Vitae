@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="./fontawesome/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/icono.png">
     <script src="./js/codigo.js"></script>
-    <title>CV - Íker Catalán</title>
+    <title>CV - Íker Catalán Gómez</title>
 </head>
 
 <body>
     <div id="header">
         <div>
             <h1>Íker Catalán Gómez</h1>
-            <h2>Informatico y Diseñador Web</h2>
+            <h2>Informático y Diseñador Web</h2>
         </div>
 
         <div class="iconos">
@@ -27,31 +28,117 @@
         </div>
     </div>
 
-    <ul>
-        <li><a href="#section-5">Experiéncia Laboral</a></li>
-        <li><a href="#section-4">Formación</a></li>
-        <li><a href="#section-3">Nivel de idioma</a></li>
-        <li><a href="#section-2">Presentación</a></li>
-        <li><a href="#section-1">Video</a></li>
-        <li><a href="#header"><i class="fas fa-arrow-up"></i></a></li>
+    <ul id="nav">
+        <li>
+            <a href="#section-5">Experiéncia</a>
+        </li>
+        <li>
+            <a href="#section-4">Estudios</a>
+        </li>
+        <li>
+            <a href="#section-3">Idiomas</i></a>
+        </li>
+        <li>
+            <a href="#section-2">Datos Personales</a>
+        </li>
+        <li>
+            <a href="#section-1">Video</a>
+        </li>
+        <li>
+            <a href="#header"><i class="fas fa-arrow-up"></i></a>
+        </li>
     </ul>
 
-    <div>
-        <h1>Video de Presentación</h1>
-        <h2>Aqui va el video</h2>
+    <div id="section-1">
+        <div>
+            <h1 class="tit ">Video de Presentación</h1>
+        </div>
+
+        <div class="flex">
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/Ds8lRXWfoPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="section-2">
+        <div class="column-2 flex">
+            <img src="./img/foto1.jpg" class="img">
+        </div>
+
+        <div class="column-2">
+            <h1 class="tit">Datos Personales</h1>
+            <p class="txt"><strong>Nombre y Apellido:</strong> Íker Catalán Gómez</p>
+            <p class="txt"><strong>Fecha de Nacimiento:</strong> 27 de Setiembre</p>
+            <p class="txt"><strong>Número de Teléfono:</strong> 688 92 51 67</p>
+            <p class="txt"><strong>Dirección:</strong> Av. Virgen de Montserrat, 182-184</p>
+            <p class="txt"><strong>Dirección de Correo</strong> 100007048.joan23@fje.edu</p>
+        </div>
+    </div>
+
+    <div id="section-3">
+        <h1 class="tit">Nivel de Idiomas</h1>
+        <div class="barra">
+            <p class="txt">Inglés</p>
+            <progress max="100" value="75"></progress>
+        </div>
+
+        <div class="barra">
+            <p class="txt">Catalán</p>
+            <progress max="100" value="100"></progress>
+        </div>
+
+        <div class="barra">
+            <p class="txt">Español</p>
+            <progress max="100" value="100"></progress>
+        </div>
+
+        <div class="barra" id="fra">
+            <p class="txt">Francés</p>
+            <progress max="100" value="50"></progress>
+        </div>
     </div>
 
 
+    <div id="section-4">
+        <div class="column-2">
+            <h1 class="tit">Estudios</h1>
+            <p class="txt"><strong>E.S.O: </strong>Mare de Déu del Carme 2015-19</p>
+            <p class="txt"><strong>Grado: </strong>JoanXXIII 2020-21</p>
+            <p class="txt"><strong>Grado Superior: </strong>JoanXXIII 2022-23</p>
+        </div>
+
+
+        <div class="column-2 flex">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.118372652998!2d2.1057304162534645!3d41.34978074989856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498d64bd023fd%3A0x26089fc39cb352a3!2sJesu%C3%AFtes%20Bellvitge%20-%20Centre%20d&#39;Estudis%20Joan%20XXIII!5e0!3m2!1sca!2ses!4v1620151742134!5m2!1sca!2ses"
+                width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <div id="section-5">
+        <h1 class="tit">Experiéncia Laboral</h1>
+        <p class="txt">No tengo experiéncia laboral. Lo más parecido que he hecho han sido 220 horas en el colegio San Pedro de Gavá. Allí mi ocupación era de mantenimiento informático.</p>
+    </div>
+
+    <div id="idioma">
+        <h2>Selecciona un Idioma</h2>
+        <select name="language" id="language" onchange="language()">
+            <option value="ES" selected>Español</option>
+            <option value="EN">Inglés</option>
+        </select>
+    </div>
+
+    <div>
+
+    </div>
 </body>
 
 </html>
 
 <!-- 
-    <div id="idioma">
+    <div id="idioma ">
         <h2>Elige el idioma</h2>
-        <select name="language" id="language" onchange="language()">
-            <option value="ES" selected>Español</option>
-            <option value="EN">Inglés</option>
+        <select name="language " id="language " onchange="language() ">
+            <option value="ES " selected>Español</option>
+            <option value="EN ">Inglés</option>
         </select>
     </div>
  -->
