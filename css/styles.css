@@ -210,7 +210,7 @@ progress {
 }
 
 #section-4 {
-    height: 60vh;
+    height: 80vh;
     width: 100%;
     background-color: lightgrey;
 }
@@ -267,14 +267,14 @@ progress {
         width: 50vw;
     }
     #section-2 {
-        height: 90vh;
+        height: 80vh;
         width: 100%;
     }
     #section-2 p {
-        font-size: 4vw;
+        font-size: 3.75vw;
     }
     #section-3 {
-        height: 60vh;
+        height: 50vh;
         width: 100%;
     }
     #section-4 {
@@ -282,7 +282,7 @@ progress {
         width: 100%;
     }
     #section-3 p {
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     #section-4 p {
         font-size: 4vw;
