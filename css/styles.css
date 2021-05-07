@@ -42,7 +42,7 @@ body {
 .column-2 {
     width: 50%;
     float: left;
-    padding: 2% 7%;
+    padding: 4% 7% 4% 7%;
 }
 
 .column-4 {
@@ -55,9 +55,9 @@ body {
 /* imagenes */
 
 .img {
-    border-radius: 10px;
     height: 50vh;
     width: 20vw;
+    border-radius: 10px;
 }
 
 
@@ -104,11 +104,11 @@ body {
 
 /* navegación */
 
-html {
-    scroll-behavior: smooth;
+.sticky {
+    position: fixed;
 }
 
-#nav {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -116,26 +116,33 @@ html {
     background-color: grey;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+    font-size: 1vw;
+    width: 100%;
+    top: 0%;
 }
 
-#nav li {
+li {
     float: right;
 }
 
-#nav li a {
+li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
 }
 
-#nav li a:hover {
-    color: black;
+ul a:hover {
+    background-color: #111;
+}
+
+li.active {
+    background-color: #4caf50;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -161,12 +168,6 @@ html {
 
 #section-3 p {
     font-size: 1.5vw;
-}
-
-#video {
-    text-align: center;
-    font-size: 4vw;
-    font-weight: bold;
 }
 
 
@@ -195,26 +196,27 @@ progress {
 }
 
 #section-2 {
+    height: 70vh;
     width: 100%;
-    float: left;
     background-color: lightgrey;
 }
 
 #section-3 {
+    height: 70vh;
     width: 100%;
-    float: left;
     padding-left: 7%;
     padding-right: 7%;
     text-align: center;
 }
 
 #section-4 {
+    height: 60vh;
     width: 100%;
-    float: left;
     background-color: lightgrey;
 }
 
 #section-5 {
+    height: 100%;
     width: 100%;
     float: left;
     padding-left: 7%;
@@ -224,5 +226,74 @@ progress {
 #section-6 {
     width: 100%;
     float: left;
-    background-color: lightgrey;
+    background-color: black;
+    color: white;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+@media only screen and (max-width: 750px) {
+    #header {
+        height: 200%;
+        text-align: center;
+    }
+    #header h1 {
+        font-size: 7vw;
+    }
+    #header h2 {
+        font-size: 5.5vw;
+    }
+    #header a {
+        font-size: 25px;
+    }
+    iframe {
+        width: 90vw;
+        height: 60vw;
+    }
+    .column-2 {
+        width: 100%;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+    .tit {
+        font-size: 9vw;
+    }
+    .txt {
+        font-size: 5vw;
+    }
+    .img {
+        height: 35vh;
+        width: 50vw;
+    }
+    #section-2 {
+        height: 90vh;
+        width: 100%;
+    }
+    #section-2 p {
+        font-size: 4vw;
+    }
+    #section-3 {
+        height: 60vh;
+        width: 100%;
+    }
+    #section-4 {
+        height: 80vh;
+        width: 100%;
+    }
+    #section-3 p {
+        font-size: 4vw;
+    }
+    #section-4 p {
+        font-size: 4vw;
+    }
+    #section-5 p {
+        font-size: 5vw;
+    }
+    a {
+        font-size: 3vw;
+    }
+    li a {
+        padding: 14px 1vw;
+    }
 }
